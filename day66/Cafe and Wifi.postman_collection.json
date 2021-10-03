@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "f0262ac1-5612-4dba-8148-5d43d6c71f16",
+		"name": "Cafe and Wifi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/search?loc=Peckham",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "loc",
+							"value": "Peckham"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Random",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/random",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/all",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "NeoWood",
+							"type": "text"
+						},
+						{
+							"key": "map_url",
+							"value": "http://www.google.com",
+							"type": "text"
+						},
+						{
+							"key": "img_url",
+							"value": "https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Pune",
+							"type": "text"
+						},
+						{
+							"key": "seats",
+							"value": "40+",
+							"type": "text"
+						},
+						{
+							"key": "has_toilet",
+							"value": "True",
+							"type": "text"
+						},
+						{
+							"key": "has_wifi",
+							"value": "True",
+							"type": "text"
+						},
+						{
+							"key": "has_sockets",
+							"value": "False",
+							"type": "text"
+						},
+						{
+							"key": "can_take_calls",
+							"value": "True",
+							"type": "text"
+						},
+						{
+							"key": "coffee_price",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch price",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/update-price/1?price=6 euro",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"update-price",
+						"1"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "6 euro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reported closed",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/report_closed/23?api_key=apikey",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"report_closed",
+						"23"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "apikey"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

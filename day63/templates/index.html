@@ -1,0 +1,51 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Library{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='css/styles.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container" style="margin: 50px auto">
+    <div class="jumbotron">
+
+        <h1>My Library</h1>
+        {% if books!= [] %}
+        <table class="table table-info">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Rating</th>
+                <th scope="col">edit/delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for book in books %}
+            <tr>
+                <th scope="row">{{book['id']}}</th>
+                <td>{{book['title']}}</td>
+                <td>{{book['author']}}</td>
+                <td>{{book['rating']}}</td>
+                <td><a href="{{url_for('edit',id = book['id'])}}">
+                    <button type="button" class="btn btn-primary">edit</button>
+                </a> <a href="{{url_for('delete',id = book['id'])}}">
+                    <button type="button" class="btn btn-primary">Delete</button>
+                </a></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <h3>Your library is empty</h3>
+        {% endif %}
+        <a href="{{ url_for('add')}}">
+            <button type="button" class="btn btn-primary">Add New Book</button>
+        </a>
+    </div>
+</div>
+{% endblock %}

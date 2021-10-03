@@ -1,0 +1,151 @@
+/* Basic tags */
+body{
+    text-align:center;}
+
+p{
+    font-size:25px;
+    font-family: 'Raleway', sans-serif;}
+
+h3{
+font-size:35px;}
+
+/* Navbar tags */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid white;
+    background-color: black;}
+
+li {
+    float: left;}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size:20px;}
+
+li a:hover:not(.active) {
+    background-color: #151B54;
+    color:white;
+}
+
+li a.active {
+    background-color: black;
+    color:white;}
+
+/* Top Image */
+.backimage_1{
+    padding:25%;
+    font-weight:1000;
+    letter-spacing:6px;}
+
+.topfront1{
+    font-family: 'Permanent Marker', cursive;}
+
+.topfront2{
+    font-family: 'Damion', cursive;}
+
+/*About*/
+.about_me{
+    margin:0% 10%;}
+
+img.mypic{
+    margin-bottom:0px;
+    padding-bottom:0px;
+    border-radius:50%;
+    border:5px solid white;}
+
+/* Believe Section */
+.fontawesomes{
+    padding:5% 0%;
+    background-color:#e6e6e6;
+    color:#151B54;
+    font-family: 'Titillium Web', sans-serif;}
+
+.icons_top{
+    color:#151B54}
+
+.icons_top:hover{
+    color:#2B547E}
+
+/* Skills section*/
+.skillset{
+    background-color:#284478;
+    color:white;
+    padding-top:10px;}
+
+.skillchart{
+    margin:3% 15%;}
+
+/*Certificates/accomplishment*/
+.cert{
+    background-color:#e6e6e6;
+    margin-top:2% ;
+    padding:2%;}
+
+/* All Images in certificates/experience*/
+.university{
+    border-radius: 50%;
+    width:400px;
+    border:3px solid black}
+
+/*Accomplishment >> img */
+.karatee{
+    border-radius: 50%;
+    width:300px;
+    border:3px solid black}
+
+/* Feedback */
+.feedback{
+    background-color:black;
+    padding:5px;
+    margin:7% 20%;
+    opacity: 60%;
+    border-radius:20px;}
+
+
+.form-control{
+    width:25%;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    background-color: white;
+    color: #000000;
+    border-radius:7px;}
+
+/* Contacts */
+.bottom{
+    background-color:#808080;
+    color:black;}
+
+.footer-link{
+    opacity:100%;}
+
+.icon{
+    margin:0% 5%;
+    color:black;}
+
+.icon:hover{
+    color:#353535;
+    transform: rotate(-20deg);}
+
+
+/* CSS ANIMATION SECTION*/
+
+.bottomtopmax {
+    position: relative;
+    animation-name: exam;
+    animation-duration: 4s;
+}
+
+@keyframes exam {
+    0%  {right:0; top:200px;letter-spacing:0px;}
+    50%   {right:0px; top:0px;}
+    100% {letter-spacing:6px};
+}
+
