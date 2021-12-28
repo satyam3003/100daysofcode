@@ -10,8 +10,8 @@ company_name = {'AAPL': 'Apple Inc',
                 'AMZN': 'Amazon Inc',
                 'TSLA': 'Tesla Inc'}
 
-ALPHA_API = 'O6QVQ86CKL9UMKUM'
-NEWS_API = '9a6e4f3235294d689c3bcac786ebb5ea'
+ALPHA_API = '***********'
+NEWS_API = '*********************'
 
 
 ## STEP 1: Use https://www.alphavantage.co
@@ -84,8 +84,8 @@ for stk in stocks:
         final_ind_news = f'{stk} : {stock_status[1]}\n{news_status}'
         final_full_msg += final_ind_news
 
-        account_sid = 'AC229886e1b6d27258f49a032d5d1a99fa'
-        auth_token = '03a12a7328890f7a3274fbc059d04f85'
+        account_sid = '******'
+        auth_token = '******'
         client = Client(account_sid, auth_token)
 
         message = client.messages \
@@ -98,18 +98,3 @@ for stk in stocks:
 
 print(final_full_msg,len(final_full_msg))
 
-## STEP 3: Use https://www.twilio.com
-# Send a seperate message with the percentage change and each article's title and description to your phone number. 
-
-
-# account_sid = 'AC229886e1b6d27258f49a032d5d1a99fa'
-# auth_token = '03a12a7328890f7a3274fbc059d04f85'
-# client = Client(account_sid, auth_token)
-#
-# message = client.messages \
-#     .create(
-#         body=final_full_msg,
-#         from_='+16194942596',
-#         to='+918983517226'
-#     )
-# print(message.status)
