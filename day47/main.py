@@ -18,11 +18,11 @@ final_price = float("".join(price_ints))
 print(final_price)
 
 if final_price > 15498:
-    my_email = 'satyam30032001@gmail.com'
-    password = 'Baldawa@30'
+    my_email = ''
+    password = ''
     with smtplib.SMTP('smtp.gmail.com') as connection:
         connection.starttls()
-        connection.login(user=my_email, password='Baldawa@30')
+        connection.login(user=my_email, password='')
         connection.sendmail(from_addr=my_email,
                             to_addrs='baldawasatyam30@gmail.com',
                             msg=f'Subject:Buy Redmi note 7 pro \n\n buy Redmi note 7 pro at {final_price} in link {url}')  # Subject:--- to add subject ---- \n\n to indicate subject is over and further add content
