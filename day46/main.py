@@ -23,8 +23,8 @@ print(date_year)
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-SPOTIPY_CLIENT_ID = "0caa57384b6c4e4b94a2a3b7704b85ac"
-SPOTIPY_CLIENT_SECRET = "c631ff66d3954979a9e32d814be96466"
+SPOTIPY_CLIENT_ID = ""
+SPOTIPY_CLIENT_SECRET = ""
 
 
 
