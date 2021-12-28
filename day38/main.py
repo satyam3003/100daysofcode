@@ -6,8 +6,8 @@ WEIGHT_KG = 56
 HEIGHT_CM = 157
 AGE = 20
 
-APP_ID = "2ec7392b"
-API_KEY = "055c1eaf612c6b78760525088e599755"
+APP_ID = ""
+API_KEY = ""
 SHEET_TOKEN = "Bearer satyambaldawa3003"
 
 headers = {
