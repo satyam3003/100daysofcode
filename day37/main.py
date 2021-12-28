@@ -1,7 +1,7 @@
 import requests
 
 USERNAME = "satyam30"
-TOKEN = "dsjkuebfeSae233f"
+TOKEN = "**********"
 pixela_post = 'https://pixe.la/v1/users'
 
 headers = {
