@@ -3,8 +3,8 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 
 CHROME_DRIVER_PATH = "C:/Users/Satyam/Driver/chromedriver.exe"
-INSTA_ID = "satyam30032001@gmail.com"
-INSTA_PASSWORD = "SSB@3003"
+INSTA_ID = ""
+INSTA_PASSWORD = ""
 INSTA_URL = "https://www.instagram.com/natgeo/followers/"
 
 
