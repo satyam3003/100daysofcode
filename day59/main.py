@@ -2,8 +2,8 @@ from flask import Flask, render_template, request
 import requests
 import smtplib
 
-my_email = 'satyam30032001@gmail.com'
-password = 'Baldawa@30'
+my_email = ''
+password = ''
 app = Flask(__name__)
 
 
