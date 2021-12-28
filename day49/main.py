@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import time
 
-PHONE = "8983517226"
+PHONE = ""
 
 executable_path = "C:/Users/Satyam/Driver/chromedriver.exe"
 driver = webdriver.Chrome(executable_path=executable_path)
@@ -17,10 +17,10 @@ print("apply_click")
 sign_in.click()
 
 email = driver.find_element_by_name("session_key")
-email.send_keys("baldawasatyam30@gmail.com")
+email.send_keys("")
 
 email = driver.find_element_by_id("password")
-email.send_keys("Satyam@30")
+email.send_keys("")
 
 button = driver.find_element_by_css_selector("div .login__form_action_container button")
 button.click()
